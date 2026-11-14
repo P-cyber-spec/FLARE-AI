@@ -1,0 +1,11 @@
+{
+  "name": "FLARE AI Infinity",
+  "short_name": "FLARE AI",
+  "description": "Universal Intelligence System",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#050816",
+  "theme_color": "#050816"
+}
