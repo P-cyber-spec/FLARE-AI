@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050816">
+<title>FLARE AI ♾️</title><style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #050816;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 25px 15px;
+    text-align: center;
+    background: #101b35;
+    border-bottom: 2px solid #00d9ff;
+}
+
+header h1 {
+    color: #00e5ff;
+    font-size: 32px;
+    margin: 0;
+}
+
+header p {
+    color: #a9c5e8;
+}
+
+main {
+    max-width: 750px;
+    margin: auto;
+    padding: 18px;
+}
+
+.panel {
+    background: #101b35;
+    padding: 18px;
+    border-radius: 15px;
+    margin-bottom: 18px;
+    border: 1px solid #19365b;
+}
+
+h2 {
+    color: #00e5ff;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+    background: #071225;
+    color: white;
+    border: 1px solid #00cfff;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 12px;
+    background: #00cfff;
+    color: #00101c;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#answer {
+    white-space: pre-wrap;
+    line-height: 1.7;
+    color: #d8edff;
+    overflow-wrap: anywhere;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.feature {
+    background: #071225;
+    border: 1px solid #19365b;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: #bdeaff;
+}
+
+footer {
+    text-align: center;
+    color: #829ab8;
+    padding: 25px;
+}
+
+@media(max-width:400px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        padding: 12px;
+    }
+}
+</style></head><body><header>
+    <h1>FLARE AI ♾️</h1>
+    <p>Universal Intelligence System</p>
+</header><main><div class="panel">
+    <h2>Welcome to FLARE</h2>
+    <p>Your universal knowledge and problem-solving assistant.</p>
+</div>
+
+<div class="panel">
+    <h2>Ask FLARE</h2>
+
+    <textarea
+        id="question"
+        placeholder="Ask anything..."
+    ></textarea>
+
+    <button onclick="askFlare()">
+        ACTIVATE FLARE ♾️
+    </button>
+</div>
+
+<div class="panel">
+    <h2>Intelligence Core</h2>
+    <div id="answer">
+
+Greetings! I am FLARE AI.
+
+Your universal intelligence system is ready.
+
+Enter a question to begin.
+</div>
+</div>
+
+<div class="panel">
+    <h2>FLARE Modules</h2>
+
+    <div class="features">
+        <div class="feature">🌌 Astronomy</div>
+        <div class="feature">🔬 Science</div>
+        <div class="feature">🧮 Mathematics</div>
+        <div class="feature">📚 Knowledge</div>
+        <div class="feature">💻 Technology</div>
+        <div class="feature">🌍 Geography</div>
+    </div>
+</div>
+
+</main><footer>
+    FLARE AI ♾️<br>
+    Universal Knowledge System
+</footer><script>
+
+function askFlare() {
+
+    const question =
+        document.getElementById("question").value.trim();
+
+    const answer =
+        document.getElementById("answer");
+
+    if (!question) {
+        answer.textContent =
+            "Please enter a question first.";
+        return;
+    }
+
+    answer.textContent =
+        "FLARE AI is analysing your question...";
+
+    setTimeout(function() {
+
+        answer.textContent =
+            "FLARE AI ANALYSIS\n\n" +
+            "Your question: " + question +
+            "\n\n" +
+            "FLARE is currently running in basic offline demonstration mode.\n\n" +
+            "Its advanced intelligence, mathematics, science, " +
+            "astronomy and online search modules can be added " +
+            "in future upgrades.\n\n" +
+            "FLARE AI ♾️";
+
+    }, 500);
+
+}
+
+</script></body>
+</html>
